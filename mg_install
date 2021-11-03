@@ -1,0 +1,11 @@
+#!/bin/sh
+
+rm -f mg.tar.gz
+wget https://github.com/jdabbs003/mg/blob/main/mg.tar.gz?raw=true
+mkdir -p ./mg_temp
+tar -xzvf mg.tar.gz -C ./mg_temp
+cp ./mg_temp/mg /usr/sbin/
+cp ./mg_temp/mgd /etc/init.d/
+cp ./mg_temp/mg.conf /var/etc/
+rm -rf ./mg_temp
+
