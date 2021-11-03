@@ -1,9 +1,25 @@
 #!/bin/sh
 
+#
+# Modemguard
+# V1.2
+#
+# Disables Teltonika modems when they're not needed.
+#
+# Copyright 2021 James M Dabbs III
+# Distributed under the Boost Software License, Version 1.0.
+# See https://www.boost.org/LICENSE_1_0.txt
+#
+
+#
+# Installation Script
+#
+
 rm -f mg.tar.gz
 wget https://github.com/jdabbs003/mg/blob/main/mg.tar.gz?raw=true
 mkdir -p ./mg_temp
 tar -xzvf mg.tar.gz -C ./mg_temp
+chmod 777 ./mg_temp/*
 cp ./mg_temp/mg /usr/sbin/
 cp ./mg_temp/mgd /etc/init.d/
 cp ./mg_temp/mg.conf /var/etc/
