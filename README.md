@@ -1,4 +1,4 @@
-# mg
+# mg 1.2
 # Modemguard
 
 To set up the local repository, install git, then from the Git CMD:
@@ -25,5 +25,5 @@ Command | Fuction
 ------- | -------
 `/etc/init.d/mgd start` | Starts the modemguard daemon.
 `/etc/init.d/mgd stop` | Stops the modemguard daemon.
-`/etc/init.d/mgd enable` | Enablies the modemguard daemon to run at boot.
+`/etc/init.d/mgd enable` | Enables the modemguard daemon to run at boot.
 `/etc/init.d/mgd disable` | Disables the modemguard daemon from running at boot.
